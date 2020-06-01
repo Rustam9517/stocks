@@ -53,7 +53,7 @@ class App extends Component {
                 <Buy {...props} getBalanceCallback={this.getUserBalance} />
               )}
             />
-            <Route path="/" component={Account} />
+            <Route path="/" exact component={Account} />
           </Switch>
         </Router>
         <Footer
